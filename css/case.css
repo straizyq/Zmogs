@@ -1,0 +1,418 @@
+.first_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.left_image img {
+    max-width: 400px;
+    height: auto;
+}
+
+.left_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.right_content_block_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_content_block_img img {
+    max-width: 50px;
+}
+
+
+
+.right_content_blocks {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right_content_text {
+    margin-bottom: 15px;
+}
+
+.right_content_blocks_text_title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.gray_btn {
+    background-color: rgb(165, 165, 165);
+}
+
+.btns {
+    margin-top: 20px;
+}
+
+.modal,
+.modal_question {
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: auto;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0;
+    transition: 0.5s;
+}
+
+.modal_open {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+}
+
+.modal_block_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_block_title {
+    margin-bottom: 15px;
+}
+
+.modal_block_input {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 5px;
+
+}
+
+.input_question {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.second_block_text,
+.third_block_text,
+.fourth_block_text {
+    margin-bottom: 20px;
+}
+
+.second_block,
+.fourth_block {
+    margin-top: 20px;
+}
+
+.second_block_title,
+.third_block_title,
+.fourth_block_title {
+    margin-bottom: 15px;
+}
+
+.third_block_ul {
+    list-style-type: none;
+}
+
+.third_block_ul .rubricator_title {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.third_block_ul .rubricator_title::before {
+    height: 25px;
+    width: 4px;
+}
+
+.consultation {
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.consultation_line {
+    width: 8px;
+    height: auto;
+    background-color: red;
+}
+
+.consultation_left {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.consultation_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    padding-bottom: 15px;
+}
+
+.consultation_right .btn {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.consultation_left,
+.consultation_right {
+    padding: 25px;
+}
+
+.consultation_right_text {
+    margin-bottom: 20px;
+}
+
+.question_small .modal_block_input {
+    width: 300px;
+}
+
+.screenshots {
+    display: flex;
+}
+
+.screenshots_img {
+    max-width: 50%;
+    margin-bottom: 15px;
+}
+
+.projects_card {
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.projects_card .btn {
+    margin-bottom: 20px;
+}
+
+.projects_card_img {
+    width: 100%;
+}
+
+.projects_card_text {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.projects_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+
+.slider_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-button-next {
+    right: 0px;
+}
+
+.swiper {
+    padding: 10px;
+}
+
+.swiper-button-prev {
+    left: 0px;
+}
+
+.btn_top {
+    display: flex;
+    justify-content: end;
+}
+
+.horizontal {
+    width: 25%;
+    height: 5px;
+    background-color: red;
+}
+
+@media(max-width: 1087px) {
+    .aside_btn {
+        display: none;
+    }
+
+    .phone_btn {
+        display: flex;
+    }
+}
+
+@media(max-width: 1061px) {
+    .phone {
+        display: none;
+    }
+
+    .burger_menu_line {
+        display: inline-block;
+    }
+
+    .header_drop {
+        display: none;
+    }
+
+    .rubricator_phone {
+        display: inline-block;
+    }
+
+    .rubricator_title {
+        display: inline;
+    }
+
+    .rubricator_phone summary {
+        list-style: none;
+    }
+
+    .rubricator_phone {
+        margin-top: 20px;
+    }
+
+    .rubricator_phone .rubricator_ul {
+        background-color: white;
+        border: 1px solid black;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .rubricator_phone details {
+        margin-bottom: 15px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .aside_btn {
+        height: 100%;
+    }
+
+    .rub_title_phone {
+        color: red;
+    }
+
+    .header_up_block {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 863px) {
+    .first_block {
+        flex-direction: column;
+    }
+
+    .left_image {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .left_image img {
+        max-width: 100%;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btns .btn {
+        margin-bottom: 10px;
+        max-width: 250px;
+    }
+
+    .consultation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical {
+        display: none;
+    }
+
+    .screenshots {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article_block {
+        max-width: 600px;
+    }
+
+
+}
+
+@media(max-width: 661px) {
+    .article_block {
+        max-width: 400px;
+    }
+
+    .modal, .modal_question {
+        left: 30%;
+        top: 30%;
+    }
+}
+
+@media(max-width: 459px) {
+    .article_block {
+        max-width: 300px;
+    }
+
+    .container {
+        padding: 0 5px;
+    }
+
+    .rubricator_phone {
+        margin-left: 15px;
+    }
+
+    .modal {
+        left: 15%;
+    }
+
+    .modal_question {
+        left: 10%;
+
+    }
+}
+
+@media(max-width: 343px) {
+    .article_block {
+        max-width: 260px;
+    }
+
+    .modal {
+        left: 2%;
+    }
+
+    .modal_question {
+        left: 2%;
+        padding: 10px;
+    }
+
+    .question_small {
+        left: 1%;
+    }
+
+}
