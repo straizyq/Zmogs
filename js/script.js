@@ -135,6 +135,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalQuestionSmall = document.querySelector(".question_small");
     const btnQuestionSmall = document.querySelector(".btn_question_small");
 
+    const modalService = document.querySelector(".modal_serviсe");
+    const btnService = document.querySelector(".service");
+
+    // Открытие модального окна для услуги
+    btnService.addEventListener("click", () => {
+        modalService.classList.toggle("modal_open");
+    });
+
+    // Закрытие модального окна при клике вне его
+    document.addEventListener("click", (event) => {
+        if (!event.target.closest('.modal_serviсe') && !event.target.classList.contains("service")) {
+            modalService.classList.remove("modal_open");
+        }
+    });
+
+    // Закрытие модального окна при нажатии клавиши Escape
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            modalService.classList.remove("modal_open");
+        }
+    });
+
     modalQuestionSmall.addEventListener("click", (event) => {
         event.stopPropagation();
     });
@@ -213,6 +235,22 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     })
+
+    const questionTitles = document.querySelectorAll('.question_answer_akk_title');
+
+    questionTitles.forEach(title => {
+        title.addEventListener('click', function () {
+            const plusSign = title.querySelector('.question_answer_plus');
+
+            if (plusSign.textContent.trim() === "+") {
+                plusSign.textContent = "-";
+            } else {
+                plusSign.textContent = "+";
+            }
+        });
+    });
+
+
 
 
 });

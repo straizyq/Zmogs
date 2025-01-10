@@ -58,7 +58,8 @@
 }
 
 .modal,
-.modal_question {
+.modal_question,
+.modal_serviсe {
     position: fixed;
     left: 40%;
     top: 40%;
@@ -72,6 +73,10 @@
     opacity: 0;
     scale: 0;
     transition: 0.5s;
+}
+
+.modal_serviсe .modal_block_input {
+    width: 250px;
 }
 
 .modal_open {
@@ -276,6 +281,7 @@
 }
 
 @media(max-width: 1112px) {
+
     .rubricator,
     .posts,
     .archives {
@@ -401,7 +407,7 @@
 
     }
 
-    .modal_question {
+    .modal_question, .modal_serviсe {
         left: 20%;
     }
 
@@ -450,8 +456,12 @@
 
     .modal_question {
         left: 10%;
-
     }
+
+    .modal_serviсe .modal_block_input {
+        width: 200px;
+    }
+    
 }
 
 
@@ -460,6 +470,10 @@
     .modal,
     .modal_question {
         left: 3%;
+    }
+
+    .modal_serviсe {
+        left: 10%;
     }
 }
 

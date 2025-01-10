@@ -13,6 +13,13 @@
 .gets_block {
     display: flex;
     align-items: center;
+    margin-top: 10px;
+}
+
+.gets_blocks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .gets_block_content_title {
@@ -22,4 +29,47 @@
 
 .gets_block_content_text {
     font-size: 14px;
+}
+
+.aside_btn {
+    height: 75%;
+}
+
+.question_answer_akk_title {
+    font-size: 17px;
+}
+
+.question_answer details summary,
+.question_answer_text {
+    list-style-type: none;
+}
+
+.question_answer_title {
+    margin-bottom: 15px;
+}
+
+.question_answer details {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.question_answer_plus {
+    color: red;
+}
+
+.question_answer_ul {
+    padding-left: 0;
+}
+
+.question_answer_akk_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 642px) {
+    .question_answer_akk_title {
+        font-size: 16px;
+    }
 }
