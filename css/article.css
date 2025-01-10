@@ -3,6 +3,15 @@
     display: inline;
 }
 
+
+
+.article_title_art {
+    font-size: 30px;
+}
+
+
+
+
 .article_content_details {
     margin-bottom: 10px;
     padding-left: 40px;
@@ -30,10 +39,6 @@
 
 .right_first_block_text {
     margin-bottom: 15px;
-}
-
-.bigger {
-    max-width: 1200px;
 }
 
 .article_page {
@@ -89,6 +94,10 @@
     align-items: center;
 }
 
+.phone_btn {
+    display: none;
+}
+
 .fourth_block_end_link {
     max-width: 40px;
 }
@@ -101,7 +110,7 @@
     max-width: 60px;
 }
 
-.tg {
+.tg_end {
     max-width: 45px;
 }
 
@@ -175,7 +184,7 @@
 }
 
 .comments_block {
-    padding: 20px 50px;
+    padding: 20px 15px;
 }
 
 .comments_to_user_answer {
@@ -309,9 +318,7 @@
 }
 
 @media(max-width: 894px) {
-    .article_block {
-        max-width: 800px;
-    }
+
 
     .comment_input_content {
         max-width: 500px;
@@ -324,7 +331,6 @@
 
 @media(max-width: 660px) {
     .article_block {
-        max-width: 550px;
         margin: 20px auto;
     }
 
@@ -356,10 +362,6 @@
         margin-top: 10px;
     }
 
-    .article_block {
-        max-width: 400px;
-
-    }
 
     .comment_input_content {
         max-width: 300px;
@@ -388,7 +390,7 @@
         max-width: 50px;
     }
 
-    .tg {
+    .tg_end {
         max-width: 40px;
     }
 

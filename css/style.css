@@ -13,6 +13,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -114,7 +116,7 @@ header {
 .header_down_block {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .article_block,
@@ -123,8 +125,9 @@ header {
     border-radius: 5px;
     margin-top: 20px;
     padding: 15px;
-    max-width: 800px;
+    max-width: 1300px;
 }
+
 
 .article_date_img,
 .article_comments_img,
@@ -258,6 +261,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    width: 290px;
 
 }
 
@@ -376,7 +380,7 @@ header {
 }
 
 .aside_btn {
-    height: 65%;
+    height: 60%;
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
@@ -470,11 +474,19 @@ footer .container {
     display: none;
 }
 
+@media(max-width: 1096px) {
+    .rubricator,
+    .posts,
+    .archives {
+        max-width: 200px;
+    }
+}
+
 @media(max-width: 981px) {
     .rubricator_phone {
         display: inline-block;
     }
-    
+
     .header_drop {
         display: none;
     }
@@ -534,7 +546,7 @@ footer .container {
         flex-direction: column;
     }
 
-    
+
 
 }
 
@@ -624,14 +636,14 @@ footer .container {
         margin: 0 0;
         padding: 0;
     }
-    
+
     .phone_btn {
         margin-left: 100px;
     }
 }
 
 @media(max-width: 335px) {
-    
+
     .container {
         padding: 5px;
     }
