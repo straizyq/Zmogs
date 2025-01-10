@@ -482,7 +482,7 @@ footer .container {
     }
 }
 
-@media(max-width: 981px) {
+@media(max-width: 1006px) {
     .rubricator_phone {
         display: inline-block;
     }
