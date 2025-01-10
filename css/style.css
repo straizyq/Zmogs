@@ -133,6 +133,10 @@ header {
     max-width: 20px;
 }
 
+.comments_text {
+    margin-right: 15px;
+}
+
 .date_comments {
     display: flex;
 }

@@ -268,6 +268,10 @@
         display: none;
     }
 
+    .article_block {
+        margin: 20px auto;
+    }
+
     .burger_menu_line {
         display: inline-block;
     }
@@ -374,11 +378,13 @@
     .modal,
     .modal_question {
         top: 30%;
-        
+
     }
+
     .modal_question {
         left: 20%;
     }
+
     .modal {
         left: 25%;
     }
@@ -393,7 +399,7 @@
     .modal,
     .modal_question {
         left: 30%;
-      
+
     }
 }
 
@@ -430,7 +436,9 @@
 
 
 @media(max-width: 385px) {
-    .modal, .modal_question {
+
+    .modal,
+    .modal_question {
         left: 3%;
     }
 }
