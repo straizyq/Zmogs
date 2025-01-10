@@ -126,61 +126,73 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     })
 
-    const modal = document.querySelector(".modal")
-    const btnResult = document.querySelectorAll(".result")
+    const modal = document.querySelector(".modal");
+    const btnResult = document.querySelectorAll(".result");
+    const modalQuestion = document.querySelector(".modal_question");
+    const btnQuestion = document.querySelector(".question");
+    const modalQuestionSmall = document.querySelector(".question_small");
+    const btnQuestionSmall = document.querySelector(".btn_question_small");
 
-    const modalQuestion = document.querySelector(".modal_question")
-    const btnQuestion = document.querySelector(".question")
+    // Prevent closing modalQuestionSmall when clicking inside
+    modalQuestionSmall.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
 
-    const modalQuestionSmall = document.querySelector(".question_small")
-    const btnQuestionSmall = document.querySelector(".btn_question_small")
+    // Prevent closing modalQuestion when clicking inside
+    modalQuestion.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
 
+    // Toggle modalQuestionSmall visibility
     btnQuestionSmall.addEventListener("click", () => {
-        modalQuestionSmall.classList.toggle("modal_open")
-    })
+        modalQuestionSmall.classList.toggle("modal_open");
+    });
 
+    // Close modalQuestionSmall on outside click
     document.addEventListener("click", (event) => {
         if (!event.target.classList.contains("btn_question_small")) {
-            modalQuestionSmall.classList.remove("modal_open")
+            modalQuestionSmall.classList.remove("modal_open");
         }
-    })
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            modalQuestionSmall.classList.remove("modal_open")
-        }
-    })
+    });
 
+    // Close modalQuestion on outside click
     btnQuestion.addEventListener("click", () => {
-        modalQuestion.classList.toggle("modal_open")
-    })
+        modalQuestion.classList.toggle("modal_open");
+    });
 
     document.addEventListener("click", (event) => {
         if (!event.target.classList.contains("question")) {
-            modalQuestion.classList.remove("modal_open")
+            modalQuestion.classList.remove("modal_open");
         }
-    })
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            modalQuestion.classList.remove("modal_open")
-        }
-    })
+    });
 
+    // Prevent closing main modal when clicking inside
+    modal.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
 
-    btnResult.forEach((item, index) => {
-        item.addEventListener("click", (event) => {
-            modal.classList.toggle("modal_open")
-        })
-    })
+    // Toggle main modal visibility
+    btnResult.forEach((item) => {
+        item.addEventListener("click", () => {
+            modal.classList.toggle("modal_open");
+        });
+    });
+
+    // Close main modal on outside click
     document.addEventListener("click", (event) => {
         if (!event.target.classList.contains("result")) {
-            modal.classList.remove("modal_open")
+            modal.classList.remove("modal_open");
         }
-    })
+    });
+
+    // Close modals on Escape key press
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
-            modal.classList.remove("modal_open")
+            modalQuestionSmall.classList.remove("modal_open");
+            modalQuestion.classList.remove("modal_open");
+            modal.classList.remove("modal_open");
         }
-    })
+    });
 
     const swiper = new Swiper('.swiper', {
 

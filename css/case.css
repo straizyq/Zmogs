@@ -250,6 +250,7 @@
     width: 25%;
     height: 5px;
     background-color: red;
+    display: none;
 }
 
 @media(max-width: 1087px) {
@@ -350,6 +351,10 @@
 
     .vertical {
         display: none;
+    }
+
+    .horizontal {
+        display: block;
     }
 
     .screenshots {
