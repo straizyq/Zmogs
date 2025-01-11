@@ -123,10 +123,6 @@
     align-items: center;
 }
 
-.phone_btn {
-    display: none;
-}
-
 .fourth_block_end_link {
     max-width: 40px;
 }
@@ -278,19 +274,10 @@
 }
 
 @media(max-width: 1202px) {
-    .phone_btn {
-        display: flex;
-
-    }
 
     .on_top_btn {
-        position: relative;
-        left: 0;
-        top: 0;
-    }
-
-    .article_btn {
-        display: none;
+        
+        top: 80%;
     }
 }
 
@@ -380,9 +367,6 @@
         flex-wrap: wrap;
     }
 
-    .phone_btn {
-        margin-left: 40px;
-    }
 }
 
 @media(max-width: 468px) {

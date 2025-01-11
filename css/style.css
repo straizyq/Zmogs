@@ -384,6 +384,8 @@ header {
     position: fixed;
     left: 95%;
     top: 85%;
+
+    z-index: 5;
 }
 
 .aside_btn {
@@ -491,9 +493,8 @@ footer .container {
     }
 
     .on_top_btn {
-        position: relative;
-        left: 0;
-        top: 0;
+        
+        top: 80%;
     }
 
     .index {
@@ -512,19 +513,14 @@ footer .container {
 
 }
 
-@media(max-width: 1194px) {
-    .index {
-        display: none;
-    }
-    .phone_btn {
-        display: flex;
-        margin-left: 200px;
-    }
-}
-
 @media(max-width: 1006px) {
     .rubricator_phone {
         display: inline-block;
+    }
+
+    .on_top_btn {
+        left: 90%;   
+        top: 80%;
     }
 
     .header_drop {
@@ -670,9 +666,12 @@ footer .container {
         padding: 0;
     }
 
-    .phone_btn {
-        margin-left: 100px;
+    .on_top_btn {
+        left: 70%;
+        top: 80%;
     }
+
+
 }
 
 @media(max-width: 335px) {
