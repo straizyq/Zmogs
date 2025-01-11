@@ -48,6 +48,7 @@ closeButtons.forEach((button) => {
         event.stopPropagation(); // предотвращаем всплытие события
         modalQuestion.classList.remove("modal_open");
         modal.classList.remove("modal_open");
+        modalService.classList.remove("modal_open");
     });
 });
 
@@ -84,5 +85,6 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         modalQuestion.classList.remove("modal_open");
         modal.classList.remove("modal_open");
+        modalService.classList.remove("modal_open");
     }
 });
