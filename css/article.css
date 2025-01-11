@@ -9,11 +9,12 @@
     font-size: 30px;
 }
 
-
+.article_content_ul {
+    margin-top: 20px;
+}
 
 
 .article_content_details {
-    margin-bottom: 10px;
     padding-left: 40px;
     margin-top: 20px;
 }
@@ -59,17 +60,45 @@
     background-color: red;
 }
 
+.article_content_link_title {
+    margin-left: 10px;
+}
+
+.article_content_title_link {
+    text-decoration: none;
+}
+
 .down_line {
     float: right;
+    position: relative;
+}
+
+.up_line_marks {
+    font-size: 100px;
+    position: absolute;
+    left: -35px;
+    top: -35px;
+}
+
+.down_line_marks {
+    font-size: 100px;
+    position: absolute;
+    right: -35px;
+    top: -25px;
 }
 
 .up_line {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .third_block_comment {
     padding: 0 25px;
     margin-bottom: 50px;
+}
+
+.third_block_comment p {
+    font-style: italic;
 }
 
 .mark {
@@ -243,13 +272,26 @@
     height: 0;
 }
 
-.on_top_btn {
-    position: absolute;
-    bottom: -8000px;
-}
 
 .date_comments {
     flex-wrap: wrap;
+}
+
+@media(max-width: 1202px) {
+    .phone_btn {
+        display: flex;
+
+    }
+
+    .on_top_btn {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .article_btn {
+        display: none;
+    }
 }
 
 @media(max-width: 1082px) {
@@ -304,10 +346,6 @@
         display: none;
     }
 
-    .on_top_btn {
-        display: none;
-    }
-
     .rub_title_phone {
         color: red;
     }
@@ -340,6 +378,10 @@
 
     .comments_content {
         flex-wrap: wrap;
+    }
+
+    .phone_btn {
+        margin-left: 40px;
     }
 }
 
@@ -374,6 +416,8 @@
     .comments_to_user_answer {
         padding-left: 30px;
     }
+
+
 
 }
 

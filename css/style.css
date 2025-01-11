@@ -340,6 +340,10 @@ header {
     border-bottom: 2px solid rgb(224, 224, 224);
 }
 
+.index {
+    height: 2500px;
+}
+
 .pages_numbers_num {
     margin-right: 20px;
     font-size: 20px;
@@ -377,10 +381,12 @@ header {
     text-decoration: none;
     margin-left: 20px;
     float: right;
+    position: fixed;
+    left: 95%;
+    top: 85%;
 }
 
 .aside_btn {
-    height: 60%;
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
@@ -444,6 +450,10 @@ footer .container {
     margin-top: 5px;
 }
 
+.phone_btn {
+    display: none;
+}
+
 .burger_menu_lines {
     display: flex;
     flex-direction: column;
@@ -474,11 +484,41 @@ footer .container {
     display: none;
 }
 
+@media(max-width: 1126px) {
+    .header_drop_text {
+        font-size: 12px;
+
+    }
+
+    .on_top_btn {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .index {
+        height: 2600px;
+    }
+}
+
 @media(max-width: 1096px) {
+
     .rubricator,
     .posts,
     .archives {
         max-width: 200px;
+    }
+
+
+}
+
+@media(max-width: 1194px) {
+    .index {
+        display: none;
+    }
+    .phone_btn {
+        display: flex;
+        margin-left: 200px;
     }
 }
 
@@ -534,9 +574,6 @@ footer .container {
         display: none;
     }
 
-    .aside_btn {
-        height: 100%;
-    }
 
     .rub_title_phone {
         color: red;
@@ -547,12 +584,17 @@ footer .container {
     }
 
 
+    .footer_ul {
+        font-size: 17px;
+    }
+
+    .footer_links, .footer_list {
+        font-size: 13px;
+    }
 
 }
 
-.phone_btn {
-    display: none;
-}
+
 
 .pages_after {
     display: flex;
@@ -570,15 +612,6 @@ footer .container {
 }
 
 @media(max-width: 809px) {
-    .on_top_btn {
-        display: none;
-    }
-
-    .phone_btn {
-        display: flex;
-        margin-left: 200px;
-    }
-
     .pages .container {
         justify-content: center;
     }
@@ -594,7 +627,7 @@ footer .container {
     footer .container {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 25px;
     }
 
 }
