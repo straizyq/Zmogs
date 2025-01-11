@@ -270,6 +270,7 @@ header {
     text-decoration: none;
     font-weight: 700;
     position: relative;
+    display: inline-block;
 }
 
 .rubricator_links::after {
@@ -279,7 +280,7 @@ header {
     bottom: -5px;
     left: 0;
     transition: 0.5s;
-    border-color: red;
+    background-color: red;
 }
 
 .rubricator_links:hover::after {
