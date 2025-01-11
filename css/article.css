@@ -356,6 +356,9 @@
 
 @media(max-width: 894px) {
 
+    .on_top_btn {
+        left: 90%;
+    }
 
     .comment_input_content {
         max-width: 500px;
@@ -412,6 +415,10 @@
         font-size: 17px;
     }
 
+    .on_top_btn {
+        left: 85%;
+    }
+
 }
 
 @media(max-width: 468px) {
@@ -448,6 +455,10 @@
 }
 
 @media(max-width: 372px) {
+
+    .on_top_btn {
+        left: 80%;
+    }
 
     .comments_user_left_img img {
         max-width: 45px;
