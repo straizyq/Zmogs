@@ -660,10 +660,6 @@ footer .container {
         margin-bottom: 15px;
     }
 
-    .article_block {
-        max-width: 550px;
-    }
-
     .pages {
         max-width: 100%;
         padding: 5px;
@@ -679,19 +675,18 @@ footer .container {
         top: 80%;
     }
 
-
+    .rubricator_phone {
+        margin-left: 15px;
+    }
 }
 
-@media(max-width: 335px) {
-
+@media (max-width: 459px) {
     .container {
         padding: 5px;
     }
+}
 
-    .rubricator_phone {
-        margin-left: 5px;
-    }
-
+@media(max-width: 335px) {
     .article_tag_text {
         font-size: 14px;
     }

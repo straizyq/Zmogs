@@ -474,7 +474,7 @@
     
 
     .container {
-        padding: 0 5px;
+        padding: 5px;
     }
 
     .rubricator_phone {
@@ -510,9 +510,6 @@
 
 
 @media(max-width: 343px) {
-    .article_block {
-        max-width: 260px;
-    }
 
     .modal {
         left: 1%;
