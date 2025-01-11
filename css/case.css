@@ -277,9 +277,13 @@
     display: none;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     color: red;
 }
+
+
+
 
 @media(max-width: 1212px) {
     .aside_btn {
@@ -294,6 +298,14 @@
 
     .phone_btn {
         display: flex;
+    }
+}
+
+@media(max-width: 1202px) {
+
+    .on_top_btn {
+
+        top: 80%;
     }
 }
 
@@ -312,15 +324,13 @@
     }
 
     .case_serv {
-        width: auto;   
+        width: auto;
     }
 
     .article_block {
         margin: 15px auto;
         width: auto;
     }
-
-    
 
     .wrapper {
         display: block;
@@ -382,9 +392,22 @@
     }
 }
 
+
+@media(max-width: 894px) {
+
+    .on_top_btn {
+        left: 90%;
+    }
+}
+
 @media(max-width: 863px) {
     .first_block {
         flex-direction: column;
+    }
+
+    .on_top_btn {
+        left: 91%;
+        top: 80%;
     }
 
 
@@ -443,7 +466,7 @@
         left: 25%;
     }
 
-  
+
 
 }
 
@@ -459,6 +482,14 @@
     .projects_card .btn {
         margin-left: 15px;
     }
+
+}
+
+
+@media(max-width: 660px) {
+    .on_top_btn {
+        left: 85%;
+    }
 }
 
 @media(max-width: 547px) {
@@ -470,8 +501,11 @@
 }
 
 @media(max-width: 459px) {
+    .on_top_btn {
+        left: 86%;
+        top: 80%;
+    }
 
-    
 
     .container {
         padding: 5px;
@@ -498,6 +532,8 @@
 
 @media(max-width: 385px) {
 
+
+
     .modal,
     .modal_question {
         left: 3%;
@@ -508,8 +544,17 @@
     }
 }
 
+@media(max-width: 372px) {
+
+    .on_top_btn {
+        left: 80%;
+    }
+}
+
 
 @media(max-width: 343px) {
+
+
 
     .modal {
         left: 1%;

@@ -488,33 +488,29 @@ footer .container {
     display: none;
 }
 
-@media(max-width: 1126px) {
-    .header_drop_text {
-        font-size: 12px;
-
-    }
+@media(max-width: 1202px) {
 
     .on_top_btn {
 
         top: 80%;
     }
-
 }
 
-@media(max-width: 1096px) {
+@media(max-width: 894px) {
 
-    .rubricator,
-    .posts,
-    .archives {
-        max-width: 200px;
+    .on_top_btn {
+        left: 90%;
     }
-
-
 }
+
 
 @media(max-width: 1006px) {
     .rubricator_phone {
         display: inline-block;
+    }
+
+    .on_top_btn {
+        left: 90%;
     }
 
     .wrapper {
@@ -525,10 +521,6 @@ footer .container {
         margin: 0 auto;
     }
 
-    .on_top_btn {
-        left: 90%;
-        top: 80%;
-    }
 
     .header_drop {
         display: none;
@@ -597,6 +589,34 @@ footer .container {
     }
 
 }
+
+@media(max-width: 660px) {
+    .on_top_btn {
+        left: 85%;
+    }
+}
+
+@media(max-width: 1126px) {
+    .header_drop_text {
+        font-size: 12px;
+
+    }
+
+
+}
+
+@media(max-width: 1096px) {
+
+    .rubricator,
+    .posts,
+    .archives {
+        max-width: 200px;
+    }
+
+
+}
+
+
 
 
 
@@ -670,10 +690,7 @@ footer .container {
         padding: 0;
     }
 
-    .on_top_btn {
-        left: 80%;
-        top: 80%;
-    }
+
 
     .rubricator_phone {
         margin-left: 15px;
@@ -683,6 +700,16 @@ footer .container {
 @media (max-width: 459px) {
     .container {
         padding: 5px;
+    }
+
+
+}
+
+
+@media(max-width: 372px) {
+
+    .on_top_btn {
+        left: 80%;
     }
 }
 
