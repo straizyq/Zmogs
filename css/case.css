@@ -195,6 +195,7 @@
 
 .consultation_right_text {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .question_small .modal_block_input {
@@ -237,9 +238,9 @@
 .projects_cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-top: 15px;
-    margin-left: 20px;
 }
 
 
@@ -310,6 +311,21 @@
         display: none;
     }
 
+    .case_serv {
+        width: auto;   
+    }
+
+    .article_block {
+        margin: 15px auto;
+        width: auto;
+    }
+
+    
+
+    .wrapper {
+        display: block;
+    }
+
     .article_block {
         margin: 20px auto;
     }
@@ -371,9 +387,6 @@
         flex-direction: column;
     }
 
-    .projects_cards {
-        margin-left: 20%;
-    }
 
     .left_image {
         width: 100%;
@@ -411,12 +424,6 @@
         flex-direction: column;
         align-items: center;
     }
-
-    .article_block {
-        max-width: 600px;
-    }
-
-
 }
 
 @media(max-width: 681px) {
@@ -436,21 +443,21 @@
         left: 25%;
     }
 
-    .projects_cards {
-        margin-left: 3%;
-    }
+  
 
 }
 
 @media(max-width: 661px) {
-    .article_block {
-        max-width: 400px;
-    }
+
 
     .modal,
     .modal_question {
         left: 30%;
 
+    }
+
+    .projects_card .btn {
+        margin-left: 15px;
     }
 }
 
@@ -463,9 +470,8 @@
 }
 
 @media(max-width: 459px) {
-    .article_block {
-        max-width: 300px;
-    }
+
+    
 
     .container {
         padding: 0 5px;

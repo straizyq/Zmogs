@@ -272,6 +272,8 @@
 
 .date_comments {
     flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
 @media(max-width: 1202px) {
@@ -285,6 +287,15 @@
 @media(max-width: 1082px) {
     .phone {
         display: none;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .article_block {
+        margin: 15px auto;
+        width: auto;
     }
 
     .header_drop_text {
@@ -353,12 +364,25 @@
     .third_block_text_img {
         flex-direction: column;
     }
+
+    .fourth_block_end {
+        font-size: 14px;
+    }
+
+    .vk {
+        max-width: 30px;
+    }
+
+    .tg_end {
+        max-width: 35px;
+    }
+
+    .whatsapp {
+        max-width: 45px;
+    }
 }
 
 @media(max-width: 660px) {
-    .article_block {
-        margin: 20px auto;
-    }
 
     .comment_input_content {
         max-width: 300px;
@@ -366,6 +390,26 @@
 
     .comments_content {
         flex-wrap: wrap;
+    }
+
+    .fourth_block_end {
+        font-size: 12px;
+    }
+
+    .comments_user_left_img img {
+        max-width: 55px;
+    }
+
+    .comments_username {
+        font-size: 17px;
+    }
+
+    .comments_user_link {
+        font-size: 13px;
+    }
+    
+    .comments_title {
+        font-size: 17px;
     }
 
 }
@@ -395,21 +439,15 @@
     }
 
     .comments_block {
-        padding: 10px;
+        padding: 15px;
     }
 
     .comments_to_user_answer {
         padding-left: 30px;
     }
-
-
-
 }
 
 @media(max-width: 372px) {
-    .article_block {
-        max-width: 270px;
-    }
 
     .comments_user_left_img img {
         max-width: 45px;
@@ -428,7 +466,7 @@
     }
 
     .fourth_block_end_title {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .comments_user_text {
